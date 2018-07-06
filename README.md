@@ -14,14 +14,15 @@ Summary: A fast and complete Python implementation of Markdown
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/markdown2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/markdown2-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/markdown2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/markdown2-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/markdown2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/markdown2-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/markdown2-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/markdown2-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/markdown2/badges/version.svg)](https://anaconda.org/conda-forge/markdown2)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/markdown2/badges/downloads.svg)](https://anaconda.org/conda-forge/markdown2)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-markdown2-green.svg)](https://anaconda.org/conda-forge/markdown2) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/markdown2.svg)](https://anaconda.org/conda-forge/markdown2) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/markdown2.svg)](https://anaconda.org/conda-forge/markdown2) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/markdown2.svg)](https://anaconda.org/conda-forge/markdown2) |
 
 Installing markdown2
 ====================
