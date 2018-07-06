@@ -1,6 +1,6 @@
 {% set name = "markdown2" %}
-{% set version = "2.3.1" %}
-{% set sha256 = "4463dd754e79e4afd490c21d81db67b85b488a0d0adf2fee2b99a69c4e67d80e" %}
+{% set version = "2.3.5" %}
+{% set sha256 = "8bb9a24eb2aa02f1427aabe46483f0f0215ab18c8a345315ae8e2ee3c3a09c03" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  number: 0
   noarch: python
-  number: 1
   script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    - markdown2 = markdown2:main
 
 requirements:
   host:
