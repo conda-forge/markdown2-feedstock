@@ -1,6 +1,6 @@
 {% set name = "markdown2" %}
-{% set version = "2.3.6" %}
-{% set sha256 = "08a124043aa0ad36ba2136239547d5011a2b770278abb11a5609611e0040ea05" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "28d769f0e544e6f68f684f01e9b186747b079a6927d9ca77ebc8c640a2829b1b" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - markdown2 = markdown2:main
 
