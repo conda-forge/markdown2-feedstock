@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
 
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -44,3 +44,4 @@ extra:
   recipe-maintainers:
     - jakirkham
     - pelson
+    - themchan
