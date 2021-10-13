@@ -117,5 +117,5 @@ Feedstock Maintainers
 
 * [@jakirkham](https://github.com/jakirkham/)
 * [@pelson](https://github.com/pelson/)
-* [@themchan](https://github.com/themchan/)
+* [@thewchan](https://github.com/thewchan/)
 
