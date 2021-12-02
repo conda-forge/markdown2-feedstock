@@ -1,5 +1,5 @@
 {% set name = "markdown2" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/markdown2-{{ version }}.tar.gz
-  sha256: ce9265cf179c4e07934e7b6a4b03f3edb7891e66e6d0f7017755f6064bbbe13f
+  sha256: 91113caf23aa662570fe21984f08fe74f814695c0a0ea8e863a8b4c4f63f9f6e
 
 build:
   number: 0
