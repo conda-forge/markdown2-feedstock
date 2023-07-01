@@ -1,11 +1,11 @@
-About markdown2
-===============
+About markdown2-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/markdown2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/trentm/python-markdown2
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/markdown2-feedstock/blob/main/LICENSE.txt)
 
 Summary: A fast and complete Python implementation of Markdown
 
