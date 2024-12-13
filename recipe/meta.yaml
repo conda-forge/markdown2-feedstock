@@ -19,22 +19,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - setuptools
-
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }}
 
 test:
   imports:
     - markdown2
-
   commands:
     - pip check
     - markdown2 --help
-
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/trentm/python-markdown2
