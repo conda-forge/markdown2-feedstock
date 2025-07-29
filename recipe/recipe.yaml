@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  name: markdown2
+  version: 2.5.4
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/markdown2-${{ version }}.tar.gz
+  sha256: a09873f0b3c23dbfae589b0080587df52ad75bb09a5fa6559147554736676889
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - markdown2 = markdown2:main
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - markdown2
+      pip_check: true
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - markdown2 --help
+
+about:
+  license: MIT
+  license_file: LICENSE.txt
+  summary: A fast and complete Python implementation of Markdown
+  homepage: https://github.com/trentm/python-markdown2
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - thewchan
